@@ -6,7 +6,6 @@ var target
 var rnd = RandomNumberGenerator.new()
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	space_state = get_world().direct_space_state
 
@@ -16,10 +15,9 @@ func _ready():
 	var main = get_tree().get_root().get_node("World")
 	target = main.get_node("Player")
 	
-	pass # Replace with function body.
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var anim : AnimationPlayer = get_node("walk/AnimationPlayer")
 	anim.play()
@@ -44,4 +42,4 @@ func _on_Timer_timeout():
 	var sfx = load("res://Assets/sfx/zombies/zombie-" + str(id) + ".wav")
 	$AudioStreamPlayer3D.stream = sfx
 	$AudioStreamPlayer3D.play()
-	pass # Replace with function body.
+	pass

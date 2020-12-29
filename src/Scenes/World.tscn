@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/prototype/crosshair.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/sci_map_obj/room/room2.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://Assets/sci_map_obj/textures/room.png" type="Texture" id=6]
 [ext_resource path="res://Enemy/Zombie.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/SpaceStation.tscn" type="PackedScene" id=8]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.247059, 0.768627, 0.317647, 1 )
@@ -26,6 +27,9 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -14.965
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24 )
 
 [node name="Environment" type="Spatial" parent="."]
+
+[node name="SpaceStation" parent="Environment" instance=ExtResource( 8 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0.63115, 0 )
 
 [node name="Room" type="CSGBox" parent="Environment"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0 )
@@ -54,14 +58,14 @@ use_collision = true
 width = 16.0
 depth = 1.0
 
-[node name="MeshInstance" type="MeshInstance" parent="Environment"]
-transform = Transform( 7.25116, 0, 0, 0, 6.63204, 0, 0, 0, 11.5796, 22.6264, 4.35156, 15.1725 )
+[node name="Room2" type="MeshInstance" parent="Environment"]
+transform = Transform( 7.25116, 0, 0, 0, 6.63204, 0, 0, 0, 11.5796, 66.2538, 4.35156, 15.1725 )
 mesh = ExtResource( 5 )
 material/0 = SubResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="Environment/MeshInstance"]
+[node name="StaticBody" type="StaticBody" parent="Environment/Room2"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Environment/MeshInstance/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Environment/Room2/StaticBody"]
 shape = SubResource( 3 )
 
 [node name="UI" type="Control" parent="."]
