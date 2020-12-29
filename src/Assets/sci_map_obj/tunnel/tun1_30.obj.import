@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tun1_30.obj-10e2212d6d4118cc6e6d5239c48e92d1.mesh"
+
+[deps]
+
+files=[ "res://.import/tun1_30.obj-10e2212d6d4118cc6e6d5239c48e92d1.mesh" ]
+
+source_file="res://Assets/sci_map_obj/tunnel/tun1_30.obj"
+dest_files=[ "res://.import/tun1_30.obj-10e2212d6d4118cc6e6d5239c48e92d1.mesh", "res://.import/tun1_30.obj-10e2212d6d4118cc6e6d5239c48e92d1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

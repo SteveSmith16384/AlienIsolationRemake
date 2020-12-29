@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cross1.obj-a513aff8f3efc8b640f84ad020380ebf.mesh"
+
+[deps]
+
+files=[ "res://.import/cross1.obj-a513aff8f3efc8b640f84ad020380ebf.mesh" ]
+
+source_file="res://Assets/sci_map_obj/cross/cross1.obj"
+dest_files=[ "res://.import/cross1.obj-a513aff8f3efc8b640f84ad020380ebf.mesh", "res://.import/cross1.obj-a513aff8f3efc8b640f84ad020380ebf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/walk_out/walk.gltf" type="PackedScene" id=1]
+[ext_resource path="res://Enemy/Zombie.gd" type="Script" id=2]
+
+[node name="Zombie" type="Spatial"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="walk" parent="." instance=ExtResource( 1 )]
