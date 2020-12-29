@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/prototype/crosshair.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Assets/sci_map_obj/room/room2.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://Assets/sci_map_obj/textures/room.png" type="Texture" id=6]
 [ext_resource path="res://Enemy/Zombie.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Enemy/walk.tscn" type="PackedScene" id=8]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.403922, 0.443137, 0.572549, 1 )
@@ -237,6 +236,3 @@ material/0 = null
 
 [node name="Zombie" parent="." instance=ExtResource( 7 )]
 transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 20.4931, 0, 29 )
-
-[node name="walk" parent="." instance=ExtResource( 8 )]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 27.0032, 0, 30.4677 )
