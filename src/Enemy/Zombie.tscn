@@ -8,6 +8,7 @@
 [node name="Zombie" type="KinematicBody"]
 transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
 script = ExtResource( 2 )
+speed = 50
 
 [node name="walk" parent="." instance=ExtResource( 1 )]
 transform = Transform( 0.145772, 0, -0.989318, 0, 1, 0, 0.989318, 0, 0.145772, -0.294728, -0.173857, -0.37792 )
@@ -15,3 +16,10 @@ transform = Transform( 0.145772, 0, -0.989318, 0, 1, 0, 0.989318, 0, 0.145772, -
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 0.1156, 0, 0, 0, 0.247817, 0, 0, 0, 0.0788422, 0, 0.0803453, 0 )
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

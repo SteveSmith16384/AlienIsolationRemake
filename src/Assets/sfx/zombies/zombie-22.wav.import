@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/zombie-22.wav-a769d39725e83b9e702b1e75a7cdcebf.sample"
+
+[deps]
+
+source_file="res://Assets/sfx/zombies/zombie-22.wav"
+dest_files=[ "res://.import/zombie-22.wav-a769d39725e83b9e702b1e75a7cdcebf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

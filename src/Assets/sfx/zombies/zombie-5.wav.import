@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/zombie-5.wav-1ff4c1956c1f362f8e9faec50d15324b.sample"
+
+[deps]
+
+source_file="res://Assets/sfx/zombies/zombie-5.wav"
+dest_files=[ "res://.import/zombie-5.wav-1ff4c1956c1f362f8e9faec50d15324b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
