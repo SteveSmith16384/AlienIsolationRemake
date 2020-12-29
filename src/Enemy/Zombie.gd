@@ -23,11 +23,11 @@ func _process(delta):
 	anim.play()
 
 	if target:
-		var result = space_state.intersect_ray(global_transform.origin, target.global_transform.origin)
-		if result.collider.is_in_group("Player"):
-			look_at(target.global_transform.origin, Vector3.UP)
-			move_to_target(delta)
-
+		var result : Dictionary = space_state.intersect_ray(global_transform.origin, target.global_transform.origin)
+		if result.size() > 0:
+			if result.collider.is_in_group("Player"):
+				look_at(target.global_transform.origin, Vector3.UP)
+				move_to_target(delta)
 	pass
 
 func move_to_target(delta):
