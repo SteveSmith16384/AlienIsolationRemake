@@ -56,3 +56,7 @@ func _physics_process(delta):
 		velocity.y += jump_power
 	
 	velocity = move_and_slide(velocity, Vector3.UP)
+	if get_slide_count() > 0:
+		print(get_slide_collision(0).get_collider().name)
+		
+		

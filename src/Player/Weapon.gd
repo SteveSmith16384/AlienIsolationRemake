@@ -1,6 +1,5 @@
-extends Spatial
-
 class_name Weapon
+extends Spatial
 
 export var fire_rate = 0.5
 export var clip_size = 5
