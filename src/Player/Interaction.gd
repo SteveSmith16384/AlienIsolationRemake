@@ -6,6 +6,7 @@ onready var interaction_label = get_node("/root/World/UI/InteractionLabel")
 
 func _ready():
 	set_interaction_text("")
+	
 
 func _process(delta):
 	var collider = get_collider()
@@ -21,6 +22,7 @@ func _process(delta):
 	elif current_collider:
 		current_collider = null
 		set_interaction_text("")
+
 
 func set_interaction_text(text):
 	if !text:

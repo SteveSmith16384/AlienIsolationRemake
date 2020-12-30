@@ -14,6 +14,7 @@ func _ready():
 func get_interaction_text():
 	return "Switch Light Off" if on else "Switch Light On"
 	
+	
 func interact():
 	on = !on
 	set_light_energy()

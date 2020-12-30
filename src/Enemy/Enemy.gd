@@ -6,6 +6,7 @@ var target
 
 func _ready():
 	space_state = get_world().direct_space_state
+	pass
 
 func _process(delta):
 	if target:
@@ -16,12 +17,16 @@ func _process(delta):
 			move_to_target(delta)
 		else:
 			set_color_green()
+	pass
+
 
 func _on_Area_body_entered(body):
 	if body.is_in_group("Player"):
 		target = body
 		print(body.name + " entered")
 		set_color_red()
+	pass
+
 
 func _on_Area_body_exited(body):
 	if body.is_in_group("Player"):
@@ -29,12 +34,15 @@ func _on_Area_body_exited(body):
 		print(body.name + " exited")
 		set_color_green()
 
+
 func move_to_target(delta):
 	var direction = (target.transform.origin - transform.origin).normalized()
 	move_and_slide(direction * speed * delta, Vector3.UP)
 
+
 func set_color_red():
 	$MeshInstance.get_surface_material(0).set_albedo(Color(1, 0, 0))
+
 
 func set_color_green():
 	$MeshInstance.get_surface_material(0).set_albedo(Color(0, 1, 0))

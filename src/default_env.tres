@@ -3,6 +3,14 @@
 [sub_resource type="ProceduralSky" id=1]
 
 [resource]
-background_mode = 2
 background_sky = SubResource( 1 )
+ambient_light_color = Color( 0.0352941, 0.815686, 0.968627, 1 )
 ambient_light_energy = 0.2
+ambient_light_sky_contribution = 0.0
+fog_enabled = true
+fog_color = Color( 0, 0, 0, 1 )
+fog_sun_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+fog_depth_begin = 5.0
+fog_depth_end = 50.0
+fog_depth_curve = 0.0525561
+ssao_enabled = true

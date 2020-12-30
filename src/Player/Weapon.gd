@@ -26,6 +26,8 @@ func _ready():
 	current_ammo = clip_size
 	raycast = get_node(raycast_path)
 	camera = get_node(camera_path)
+	pass
+
 	
 func _process(delta):
 	if reloading:
@@ -48,6 +50,8 @@ func _process(delta):
 	else:
 		transform.origin = transform.origin.linear_interpolate(default_position, ads_acceleration)
 		camera.fov = lerp(camera.fov, default_fov, ads_acceleration)
+	pass
+
 
 func check_collision():
 	if raycast.is_colliding():
@@ -55,6 +59,8 @@ func check_collision():
 		if collider.is_in_group("Enemies"):
 			collider.queue_free()
 			print("Killed " + collider.name)
+	pass
+
 
 func fire():
 	print("Fired weapon")
@@ -64,6 +70,8 @@ func fire():
 	yield(get_tree().create_timer(fire_rate), "timeout")
 	
 	can_fire = true
+	pass
+
 
 func reload():
 	print("Reloading")
@@ -72,3 +80,5 @@ func reload():
 	current_ammo = clip_size
 	reloading = false
 	print("Reload complete")
+	pass
+

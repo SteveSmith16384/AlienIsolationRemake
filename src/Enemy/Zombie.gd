@@ -11,6 +11,7 @@ func _ready():
 
 	var anim : AnimationPlayer = get_node("walk/AnimationPlayer")
 	anim.current_animation = "Take 001"
+	anim.playback_speed = 3.5
 
 	var main = get_tree().get_root().get_node("World")
 	target = main.get_node("Player")

@@ -1,6 +1,6 @@
+class_name Interactable
 extends Node
 
-class_name Interactable
 
 func get_interaction_text():
 	return "Interact"

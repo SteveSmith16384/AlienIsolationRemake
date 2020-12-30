@@ -15,6 +15,7 @@ var camera_x_rotation = 0
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
+
 func _input(event):
 	if event is InputEventMouseMotion:
 		head.rotate_y(deg2rad(-event.relative.x * mouse_sensitivity))
@@ -23,10 +24,14 @@ func _input(event):
 		if camera_x_rotation + x_delta > -90 and camera_x_rotation + x_delta < 90: 
 			camera.rotate_x(deg2rad(-x_delta))
 			camera_x_rotation += x_delta
+	pass
+
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	pass
+
 
 func _physics_process(delta):
 	var head_basis = head.get_global_transform().basis

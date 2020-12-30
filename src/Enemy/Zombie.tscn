@@ -5,10 +5,12 @@
 
 [sub_resource type="BoxShape" id=1]
 
-[node name="Zombie" type="KinematicBody"]
+[node name="Zombie" type="KinematicBody" groups=[
+"Enemies",
+]]
 transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
 script = ExtResource( 2 )
-speed = 50
+speed = 150
 
 [node name="walk" parent="." instance=ExtResource( 1 )]
 transform = Transform( 0.145772, 0, -0.989318, 0, 1, 0, 0.989318, 0, 0.145772, -0.294728, -0.173857, -0.37792 )

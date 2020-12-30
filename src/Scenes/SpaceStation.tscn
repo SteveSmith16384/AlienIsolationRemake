@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/map_sections/Cross3.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/map_sections/Tunnel2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/map_sections/Room3.tscn" type="PackedScene" id=3]
 
 [node name="SpaceStation" type="Spatial"]
 
@@ -12,3 +13,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.68789 )
 
 [node name="Tunnel3" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.67111 )
+
+[node name="Tunnel4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.64221 )
+
+[node name="Tunnel6" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0234027, 0, -0.999726, 0, 1, 0, 0.999726, 0, 0.0234027, 1.64886, 0, 0.00959826 )
+
+[node name="Tunnel5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.61154 )
+
+[node name="Room3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.62233 )
