@@ -57,6 +57,9 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, Vector3.UP)
 	if get_slide_count() > 0:
-		print(get_slide_collision(0).get_collider().name)
-		
+		#print(get_slide_collision(0).get_collider().name)
+		var coll = get_slide_collision(0).get_collider()
+		if coll.has_method("collided"):
+			coll.collided(self)
+		pass
 		
