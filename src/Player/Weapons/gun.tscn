@@ -6,3 +6,4 @@
 
 [node name="mergedBlocksClone" parent="." index="0"]
 layers = 2
+cast_shadow = 0

@@ -38,9 +38,9 @@ script = ExtResource( 2 )
 [node name="Weapons" type="Spatial" parent="Head/Camera"]
 
 [node name="gun" parent="Head/Camera/Weapons" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.288, -0.276, -0.229 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.288, -0.276, 0.32591 )
 script = ExtResource( 3 )
-default_position = Vector3( 0.288, -0.276, -0.229 )
+default_position = Vector3( 0.188, -0.276, -0.129 )
 ads_position = Vector3( 0, -0.215, -0.134 )
 raycast_path = NodePath("../../RayCast")
 camera_path = NodePath("../..")
