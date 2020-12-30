@@ -11,7 +11,7 @@ func _ready():
 
 	var anim : AnimationPlayer = get_node("walk/AnimationPlayer")
 	anim.current_animation = "Take 001"
-	anim.playback_speed = 3.5
+	anim.playback_speed = 3
 
 	var main = get_tree().get_root().get_node("World")
 	target = main.get_node("Player")
@@ -37,10 +37,10 @@ func move_to_target(delta):
 
 
 func _on_Timer_timeout():
-	$Timer.wait_time = rnd.randi_range(10, 15)
-	
 	var id = rnd.randi_range(1, 24)
 	var sfx = load("res://Assets/sfx/zombies/zombie-" + str(id) + ".wav")
 	$AudioStreamPlayer3D.stream = sfx
 	$AudioStreamPlayer3D.play()
+
+	$Timer.wait_time = rnd.randi_range(10, 15)
 	pass

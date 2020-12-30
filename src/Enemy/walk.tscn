@@ -4,6 +4,25 @@
 
 [node name="walk" instance=ExtResource( 1 )]
 
+[node name="RootNode" parent="." index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47392, 0, 0.239616 )
+
+[node name="Skeleton" parent="RootNode" index="0"]
+bones/0/bound_children = [  ]
+bones/7/bound_children = [  ]
+bones/13/bound_children = [  ]
+bones/15/bound_children = [  ]
+bones/17/bound_children = [  ]
+bones/19/bound_children = [  ]
+bones/21/bound_children = [  ]
+bones/27/bound_children = [  ]
+bones/29/bound_children = [  ]
+bones/31/bound_children = [  ]
+bones/33/bound_children = [  ]
+bones/35/bound_children = [  ]
+bones/39/bound_children = [  ]
+bones/43/bound_children = [  ]
+
 [node name="BoneAttachment" parent="RootNode/Skeleton" index="0"]
 transform = Transform( -2.54, 3.33071e-06, 0, 0, 0, 2.54, 3.33071e-06, 2.54, 0, 0.415876, 0.287766, -0.230813 )
 

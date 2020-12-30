@@ -20,6 +20,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.64221 )
 [node name="Tunnel6" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.0234027, 0, -0.999726, 0, 1, 0, 0.999726, 0, 0.0234027, 1.64886, 0, 0.00959826 )
 
+[node name="Tunnel7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0234027, 0, -0.999726, 0, 1, 0, 0.999726, 0, 0.0234027, 2.60969, 0, 0.00959826 )
+
+[node name="Tunnel8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0234027, 0, -0.999726, 0, 1, 0, 0.999726, 0, 0.0234027, -1.67132, 0, 0.00959826 )
+
+[node name="Tunnel9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0234027, 0, -0.999726, 0, 1, 0, 0.999726, 0, 0.0234027, -2.65472, 0, 0.00959826 )
+
 [node name="Tunnel5" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.61154 )
 

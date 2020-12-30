@@ -3,25 +3,27 @@
 [ext_resource path="res://Assets/walk_out/walk.gltf" type="PackedScene" id=1]
 [ext_resource path="res://Enemy/Zombie.gd" type="Script" id=2]
 
-[sub_resource type="BoxShape" id=1]
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.15
+height = 0.35
 
 [node name="Zombie" type="KinematicBody" groups=[
 "Enemies",
 ]]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.54833, 0 )
 script = ExtResource( 2 )
 speed = 150
 
 [node name="walk" parent="." instance=ExtResource( 1 )]
-transform = Transform( 0.145772, 0, -0.989318, 0, 1, 0, 0.989318, 0, 0.145772, -0.294728, -0.173857, -0.37792 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 0.1156, 0, 0, 0, 0.247817, 0, 0, 0, 0.0788422, 0, 0.0803453, 0 )
-shape = SubResource( 1 )
+transform = Transform( 0.145772, 0, -0.989318, 0, 1, 0, 0.989318, 0, 0.145772, -0.294728, -0.427121, -0.37792 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, -0.126116, 0 )
+shape = SubResource( 1 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

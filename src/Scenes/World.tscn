@@ -40,8 +40,9 @@ height = 16.0
 depth = 78.0
 
 [node name="Light Bulb" type="OmniLight" parent="Environment"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.986269, -10.8147 )
 light_energy = 0.52
+shadow_enabled = true
 omni_range = 42.0
 
 [node name="CSGBox2" type="CSGBox" parent="Environment"]
@@ -124,4 +125,4 @@ stretch_mode = 4
 environment = ExtResource( 3 )
 
 [node name="Zombie" parent="." instance=ExtResource( 7 )]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 20.4931, 0, 29 )
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 20.4931, 0, 29 )
