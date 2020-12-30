@@ -14,6 +14,7 @@ var camera_x_rotation = 0
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$Head/Camera/Weapons/gun.visible = false
 
 
 func _input(event):
@@ -60,6 +61,8 @@ func _physics_process(delta):
 		#print(get_slide_collision(0).get_collider().name)
 		var coll = get_slide_collision(0).get_collider()
 		if coll.has_method("collided"):
-			coll.collided(self)
+			#coll.collided(self)
+			$Head/Camera/Weapons/gun.visible = true
+			coll.queue_free()
 		pass
 		
