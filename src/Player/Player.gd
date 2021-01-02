@@ -14,7 +14,7 @@ var camera_x_rotation = 0
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	$Head/Camera/Weapons/gun.visible = false
+	$Head/Camera/Weapons/gun.visible = Globals.TEST_GUN #false
 
 
 func _input(event):

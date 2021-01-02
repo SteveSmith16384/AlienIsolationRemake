@@ -49,6 +49,9 @@ func _process(delta):
 	else:
 		transform.origin = transform.origin.linear_interpolate(default_position, ads_acceleration)
 		camera.fov = lerp(camera.fov, default_fov, ads_acceleration)
+
+	$MuzzleFlash.visible = false
+
 	pass
 
 
@@ -67,7 +70,8 @@ func fire():
 	current_ammo -= 1
 	check_collision()
 	yield(get_tree().create_timer(fire_rate), "timeout")
-	
+	$MuzzleFlash.visible = true
+
 	can_fire = true
 	pass
 

@@ -30,6 +30,10 @@ config/name="Alien Isolation"
 run/main_scene="res://Scenes/World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Globals="*res://Globals.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray(  )
