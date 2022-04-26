@@ -31,7 +31,7 @@ func _on_Area_body_entered(body):
 func _on_Area_body_exited(body):
 	if body.is_in_group("Player"):
 		target = null
-		print(body.name + " exited")
+		#print(body.name + " exited")
 		set_color_green()
 
 
